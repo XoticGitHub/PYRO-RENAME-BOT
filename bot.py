@@ -8,9 +8,9 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             name="renamer",
-            api_id=API_ID,
-            api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
+            api_id=28749782,
+            api_hash=41ccb476f64d1348fab05079840a7ed3,
+            bot_token=6029848697:AAFCU5z3rXtDtY77POMk118ySEkMNj5QDFU,
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15,
@@ -21,10 +21,10 @@ class Bot(Client):
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username 
-        self.force_channel = FORCE_SUB
-        if FORCE_SUB:
+        self.force_channel = https://t.me/alllivecricketmatches
+        if https://t.me/alllivecricketmatches:
             try:
-                link = await self.export_chat_invite_link(FORCE_SUB)                  
+                link = await self.export_chat_invite_link(https://t.me/alllivecricketmatches)                  
                 self.invitelink = link
             except Exception as e:
                 print(e)
